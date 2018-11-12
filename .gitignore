@@ -1,0 +1,8 @@
+# ~
+*
+!.Xresources
+!.config/polybar/config
+!.config/polybar/events.sh
+!.config/i3/config
+!.gitignore
+
