@@ -5,7 +5,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+alias ls='ls -lah --color=auto | more'
+alias rm='rm -i'
+alias c='clear'
+alias h='history'
+alias pacup='sudo pacman -Syu'
+
 PS1='[\u@\h \W]\$ '
 
 ##################### pywal Config #####
