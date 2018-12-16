@@ -51,7 +51,7 @@ modules-left = i3
 modules-center = title
 
 # modules-right = arrowvolume volume arrowcpu cpu arrowmemory memory arrowdate date arrowdate2
-modules-right = separator volume separator cpu separator memory serarator temperature separator date separator
+modules-right = separator volume separator cpu separator memory separator temperature separator date separator power-menu separator
 ; arrowevent event
 
 tray-position = right
@@ -264,7 +264,7 @@ label-muted-background = ${colors.background}
 [module/temperature]
 type = internal/temperature
 interval = 5
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
 
 warn-temperature = 75
 label-warn = %temperature-c%
@@ -275,6 +275,38 @@ label = %temperature-c%
 ramp-0 = " "
 ramp-1 = " "
 ramp-2 = " "
+
+[module/power-menu]
+type = custom/menu
+
+label-open = "⏻"
+label-close = "⏼ "
+label-separator = |
+label-separator-margin = 1
+
+menu-0-0 = Terminate WM
+menu-0-0-foreground = ${colors.yellow}
+menu-0-0-exec = bspc quit -1
+menu-0-1 = Reboot
+menu-0-1-foreground = ${colors.yellow}
+menu-0-1-exec = menu-open-1
+menu-0-2 = Power off
+menu-0-2-foreground = ${colors.yellow}
+menu-0-2-exec = menu-open-2
+
+menu-1-0 = Cancel
+menu-1-0-foreground = ${colors.yellow}
+menu-1-0-exec = menu-open-0
+menu-1-1 = Reboot
+menu-1-1-foreground = ${colors.yellow}
+menu-1-1-exec = sudo reboot
+
+menu-2-0 = Power off
+menu-2-0-foreground = ${colors.yellow}
+menu-2-0-exec = sudo poweroff
+menu-2-1 = Cancel
+menu-2-1-foreground = ${colors.yellow}
+menu-2-1-exec = menu-open-0
 
 [module/event]
 type = custom/script
