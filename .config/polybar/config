@@ -61,12 +61,6 @@ tray-padding = 1
 ;-------------------------------------------------------------------------------;
 ;  D E C O R A T I O N S						                             	;
 ;-------------------------------------------------------------------------------;
-# [module/arrowi3]
-# type = custom/text
-# content = ""
-# content-font = 2
-# content-foreground = ${colors.blue}
-# content-background = ${colors.background}
 
 [module/separator]
 type = custom/text
@@ -74,65 +68,6 @@ content = " ⏽ "
 content-font = 3
 content-foreground = ${colors.white}
 content-background = ${colors.background}
-
-# [module/arrowtitleleft]
-# type = custom/text
-# content = "-"
-# content-font = 1
-# content-foreground = ${colors.white}
-# content-background = ${colors.background}
-
-# [module/arrowtitleright]
-# type = custom/text
-# content = "-"
-# content-font = 1
-# content-foreground = ${colors.white}
-# content-background = ${colors.background}
-
-# [module/arrowvolume]
-# type = custom/text
-# content = " "
-# content-font = 3
-# content-foreground = ${colors.magenta}
-# content-background = ${colors.background}
-
-# [module/arrowcpu]
-# type = custom/text
-# content = " "
-# content-font = 3
-# content-foreground = ${colors.cyan}
-# content-background = ${colors.magenta}
-
-# [module/arrowmemory]
-# type = custom/text
-# content = " "
-# content-font = 3
-# content-foreground = ${colors.green}
-# content-background = ${colors.cyan}
-
-# [module/arrowdate]
-# ; grey to bg
-# type = custom/text
-# content = " "
-# content-font = 3
-# content-foreground = ${colors.blue}
-# content-background = ${colors.green}
-
-# [module/arrowdate2]
-# ; transition into tray icon area
-# type = custom/text
-# content = " "
-# content-font = 3
-# content-foreground = ${colors.blue}
-# content-background = ${colors.background}
-
-# [module/arrowevent]
-# ; next calendar event
-# type = custom/text
-# content = " "
-# content-font = 3
-# content-foreground = ${colors.red}
-# content-background = ${colors.white}
 
 ;-------------------------------------------------------------------------------;
 ;  M O D U L E S				 			                                 	;
@@ -167,10 +102,10 @@ enable-scroll = false
 strip-wsnumbers = true
 
 ws-icon-0 = work;
-ws-icon-1 = comms;
-ws-icon-2 = media;ﰝ
+ws-icon-1 = web;
+ws-icon-2 = comms;
 ws-icon-3 = games;
-ws-icon-4 = 4;4
+ws-icon-4 = music;ﰝ
 ws-icon-5 = 5;5
 ws-icon-6 = 6;6
 ws-icon-7 = 7;7
@@ -183,17 +118,18 @@ pin-workspaces = true ; Only show workspaces on the same output as the bar
 label-mode = " %mode% "
 label-mode-background = ${colors.background}
 
-label-focused = %{F#02adff B#0B0F10}%{F-} %icon% %{B#02adff F#0B0F10}%{F-}
-label-focused-foreground = ${colors.white}
-label-focused-background = ${colors.black}
+;label-focused = %{F#02adff B#0B0F10}%{F-} %icon% %{B#02adff F#0B0F10}%{F-}
+label-focused = " %icon% "
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.blue}
 
 label-visible = " %icon% "
-label-visible-foreground = ${colors.foreground}
-label-visible-background = ${colors.background}
-
+label-visible-foreground = ${colors.black}
+label-visible-background = ${colors.blue}
+1
 label-unfocused = " %icon% "
-label-unfocused-foreground = ${colors.black}
-label-unfocused-background = ${colors.blue}
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-background = ${colors.background}
 
 label-urgent = " %icon% "
 label-urgent-foreground = ${colors.red}
