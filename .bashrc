@@ -10,6 +10,7 @@ alias rm='rm -i'
 alias c='clear'
 alias h='history'
 alias pacup='sudo pacman -Syu'
+alias convpn='~/vpncon.sh'
 
 PS1='[\u@\h \W]\$ '
 
