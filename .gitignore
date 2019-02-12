@@ -5,6 +5,7 @@
 !.config/
 !.config/polybar/
 !.config/polybar/events.sh
+!.config/i3/
 !.config/i3/config
 !.gitignore
 !.bashrc
