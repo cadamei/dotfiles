@@ -5,11 +5,12 @@ IRC*iconFile: /usr/share/icons/Faenza/apps/32/xchat.png
 URxvt.geometry: 80x22
 ! URXVT FONTS
 !------------------------------------------------
-URxvt.font:xft:Inconsolata:pixelsize=16
-URxvt.boldFont:xft:Inconsolata:bold:pixelsize=16
-URxvt.italicfont:xft:Inconsolata:italic:pixelsize=16
-URxvt.bolditalicFont:xft:Inconsolata:bold:italic:pixelsize=16
-URxvt*letterSpace: 1
+URxvt.font:             xft:DejaVu Sans Mono:pixelsize=16
+URxvt.boldFont:         xft:DejaVu Sans Mono:bold:pixelsize=16
+URxvt.italicfont:       xft:DejaVu Sans Mono:italic:pixelsize=16
+URxvt.bolditalicFont:   xft:DejaVu Sans Mono:bold:italic:pixelsize=16
+
+URxvt*letterSpace: -1
 URxvt*allow_bold: true
 ! URXVT FONT SETTINGS
 !------------------------------------------------
@@ -63,41 +64,41 @@ URxvt.keysym.F11: perl:fullscreen:switch
 ! vim: set filetype=xdefaults :
 
 ! special
-*.foreground: #93a1a1
-*.background: #3c3b37
-*.cursorColor: #93a1a1
+!*.foreground: #93a1a1
+!*.background: #3c3b37
+!*.cursorColor: #93a1a1
 
 ! black
-*.color0: #5f5f5f
-*.color8: #828282
+!*.color0: #5f5f5f
+!*.color8: #828282
 
 ! red
-*.color1: #d96468
-*.color9: #d98f93
+!*.color1: #d96468
+!*.color9: #d98f93
 
 ! green
-*.color2: #a2d964
-*.color10: #b8d98f
+!*.color2: #a2d964
+!*.color10: #b8d98f
 
 ! yellow
-*.color3: #d9c964
-*.color11: #d9cf8f
+!*.color3: #d9c964
+!*.color11: #d9cf8f
 
 ! blue
-*.color4: #64a2d9
-*.color12: #8f99d9
+!*.color4: #64a2d9
+!*.color12: #8f99d9
 
 ! magenta
-*.color5: #9a64d9
-*.color13: #b08fd9
+!*.color5: #9a64d9
+!*.color13: #b08fd9
 
 ! cyan
-*.color6: #64d9d5
-*.color14: #8fd9d5
+!*.color6: #64d9d5
+!*.color14: #8fd9d5
 
 ! white
-*.color7: #989898
-*.color15: #c5c5c5
+!*.color7: #989898
+!*.color15: #c5c5c5
 
 Xcursor.size: 16
 
