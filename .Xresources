@@ -101,4 +101,3 @@ URxvt.keysym.F11: perl:fullscreen:switch
 !*.color15: #c5c5c5
 
 Xcursor.size: 16
-

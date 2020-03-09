@@ -12,3 +12,4 @@
 !.ssh/config
 !.config/rofi/config
 !.config/wal/templates/colors-rofi-dark.rasi
+!.config/kitty/kitty.conf
