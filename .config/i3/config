@@ -140,7 +140,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 #bindsym $mod+Shift+0 move container to workspace $ws10
 
-exec_always --no-startup-id "/usr/bin/wal --backend colorthief -i ~/Pictures/graham-holtshausen-1080902-unsplash.jpg"
+# exec_always --no-startup-id "/usr/bin/wal --backend colorthief -i ~/Pictures/graham-holtshausen-1080902-unsplash.jpg"
+exec_always --no-startup-id "/usr/bin/wal --theme gruvbox"
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 
 # reload the configuration file
